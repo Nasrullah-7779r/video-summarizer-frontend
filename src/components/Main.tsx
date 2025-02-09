@@ -20,13 +20,24 @@ export default function Main() {
     try {
       const body = JSON.stringify({ video_url: videoLink })
 
-      const response = await fetch("http://4.244.144.102:8000/summary", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: body,
-      })
+      // const response = await fetch("http://4.244.144.102:8000/summary", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: body,
+      // })
+
+      const response = await fetch(
+        "https://18e7-4-244-144-102.ngrok-free.app/summary",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: body,
+        }
+      )
 
       if (!response.ok) {
         toast.error("Something went wrong")
