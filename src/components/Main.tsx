@@ -29,7 +29,7 @@ export default function Main() {
       // })
 
       const response = await fetch(
-        "https://18e7-4-244-144-102.ngrok-free.app/summary",
+        "https://ec71-4-244-144-102.ngrok-free.app/summary",
         {
           method: "POST",
           headers: {
