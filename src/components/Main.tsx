@@ -29,7 +29,7 @@ export default function Main() {
       // })
 
       const response = await fetch(
-        "https://ec71-4-244-144-102.ngrok-free.app/summary",
+        "https://nasir-azure-vm.duckdns.org/summary",
         {
           method: "POST",
           headers: {
